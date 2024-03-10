@@ -20,12 +20,29 @@
                 <li><a href="#">Mujeres</a></li>
                 <li><a href="#">Hombres</a></li>
                 <li><a href="#">Cesta</a></li>
+                
+
+                <?php  session_start(); 
+                if (isset($_SESSION["correo"])) {
+                    echo"". $_SESSION["correo"] ."";
+                    ?> <a href="cerrarsesion.php"><button class="btniniciar">Cerrar Sesion </button></a>
+                <?php } else { ?>
+                    <a href="registro.php"><button class="btniniciar">Iniciar Sesion </button></a>
+                <?php }
+                 ?>
+
+                
             </ul>
         </nav>
     </header>
+    
+<!--Cuadro del login-->
+
+
 
 
     <!--banner-->
+ <section class="section-banner">   
     <div class="banner">
         <img src="Imagenes/banner.jpg" alt="Banner">
         <div class="texto-banner">
@@ -34,9 +51,8 @@
             <button class="buttonbanner1">Comprar ahora</button>
         </div>
     </div>
-
-
-    <!-----------------------Slider------------------------->
+</section>
+    <!-----------------------Slider de productos------------------------->
     <section class="product">
         <h2 class="product-category">Novedades destacadas</h2>
         <button class="pre-btn"><img src="Imagenes/arrow.png" class="arrow" alt=""></button>
