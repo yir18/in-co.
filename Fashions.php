@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,17 +23,34 @@
                 <li><a href="#">Hombres</a></li>
                 <li><a href="#">Cesta</a></li>
                 
+         <?php
+                    // Verificar si hay una sesión activa
+                    if (isset($_SESSION["correo"])) {
+                        // Mostrar el correo del usuario
+                        echo $_SESSION["correo"];
+                        
+                        // Verificar si el usuario tiene un rol de administrador (rol == 1)
+                        if (isset($_SESSION["rol"]) && $_SESSION["rol"] == 1) {
+                ?>
+                            <p>Hola Admin</p>
+                            <a href="views/admin_user.php"><button class="btniniciar">Gestión</button></a>
+                            <a href="cerrarsesion.php"><button class="btniniciar">Cerrar Sesión</button></a>
+                <?php
+                        } else {
+                            // Si el usuario no es administrador, solo mostrar el botón de cerrar sesión
+                ?>
+                            <a href="cerrarsesion.php"><button class="btniniciar">Cerrar Sesión</button></a>
+                <?php
+                        }
+                    } else {
+                        // Si no hay una sesión activa, mostrar el botón para iniciar sesión
+                ?>
+                        <a href="registro.php"><button class="btniniciar">Iniciar Sesión</button></a>
+                <?php
+                    }
+                ?>
 
-                <?php  session_start(); 
-                if (isset($_SESSION["correo"])) {
-                    echo"". $_SESSION["correo"] ."";
-                    ?> <a href="cerrarsesion.php"><button class="btniniciar">Cerrar Sesion </button></a>
-                <?php } else { ?>
-                    <a href="registro.php"><button class="btniniciar">Iniciar Sesion </button></a>
-                <?php }
-                 ?>
 
-                
             </ul>
         </nav>
     </header>

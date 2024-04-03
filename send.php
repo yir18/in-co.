@@ -25,9 +25,9 @@ if (isset($_POST["send"])) {
 <?php
 session_start();
 
-$conexion = new mysqli("localhost", "root", "", "formulario");
+$conexion = mysqli_connect ("localhost", "root", "", "formulario");
 
-if ($conexion->connect_error) {
+if (!$conexion) {
     die("Error de conexión a la base de datos: " . $conexion->connect_error);
 }
 if (isset($_POST["iniciar"])) {
@@ -37,17 +37,20 @@ if (isset($_POST["iniciar"])) {
 
     // Validar el correo y la contraseña
     $sql = "SELECT * FROM datos WHERE correo = '$correo' AND contraseña = '$contraseña'";
-    $resultado = $conexion->query($sql);
-
-    if ($resultado->num_rows > 0) {
+    $resultado = mysqli_query($conexion, $sql);
+    $row_resultado = mysqli_fetch_array($resultado, MYSQLI_ASSOC);
+    
+    if (count($row_resultado) > 0) {
         // Autenticación exitosa
         $_SESSION["correo"] = $correo;
+        $_SESSION["rol"] = $row_resultado["rol"];
         echo '<script type="text/javascript">window.location.href = "Fashions.php";</script>';
         echo "Autenticación exitosa. Bienvenido, $correo!";
     } else {
         // Autenticación fallida
+
         echo "Error en la autenticación. Verifica tu correo y contraseña.";
-    }
+    } 
 }
 $conexion->close();
 ?>

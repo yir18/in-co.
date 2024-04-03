@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;1,100&display=swap');
+
+
+
 body{
     display: flex;
     justify-content: center;
@@ -6,6 +10,9 @@ body{
     background: url(Imagenes/banner.jpg);
     background-size: cover;
     background-position: center;
+    font-family: 'raleway';
+    
+
 }
 
 
@@ -23,6 +30,7 @@ body{
     align-items: center;
     overflow: hidden;
     transition: transform .5s ease height .2s ease;
+    
    
 }
 
@@ -35,6 +43,7 @@ body{
 .fondo .contenedor-form{
     width: 100%;
     padding: 40px;
+  
 }
 
 .fondo .contenedor-form.login{
@@ -72,7 +81,7 @@ body{
     cursor: pointer;
     z-index: 1;
     font-size: 1.8em;
-    color: #f1efef;
+    color: #ffffff;
 }
 
 .contenedor-form h2{
@@ -98,7 +107,7 @@ body{
     font-weight: 600;
     pointer-events: none;
     transition: 0.4s;
-    color: #9e2828;
+    color: #000211;
 }
 
 input:focus~label,
@@ -162,13 +171,14 @@ input:valid~label {
 
 .registrar{
     font-size: .9em;
-    color: #f1efef;
+    color:  #f38a8a;
+    ;
     text-align: center;
     margin: 25px 0 10px;
 }
 
 .registrar p a{
-    color: #f1efef;
+    color: #000000;
     text-decoration: none;
 }
 
