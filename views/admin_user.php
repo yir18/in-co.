@@ -10,10 +10,11 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/32bfe0633a.js" crossorigin="anonymous"></script>
     <title>Gestio de usuarios</title>
+    <link rel="stylesheet" type="text/css" href="s-gestion.css">
+    <script src="https://kit.fontawesome.com/32bfe0633a.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body">
     
 
   		<h1>Bienvenido Administrador <?php echo $_SESSION['correo']; ?></h1>
@@ -81,7 +82,7 @@ if($dato -> num_rows >0){
 
 ?>
 
-            <script src="script.js"></script>
+           
         </table>
 	</body>
 
