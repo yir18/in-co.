@@ -109,7 +109,7 @@
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">Camiseta algodón</h2>
-                    <span class="price">$20</span><span class="actual-price">$40</span>
+                    <span class="price">$30.000</span><span class="actual-price">$60.000</span>
                 </div>
             </div>
             <div class="product-card">
