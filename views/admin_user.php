@@ -1,3 +1,5 @@
+
+
 <?php
 
 session_start();
@@ -11,23 +13,24 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestio de usuarios</title>
-    <link rel="stylesheet" type="text/css" href="s-gestion.css">
+    <link rel="stylesheet" type="text/css" href="../gestion.css">
     <script src="https://kit.fontawesome.com/32bfe0633a.js" crossorigin="anonymous"></script>
 </head>
 <body class="body">
     
-
-  		<h1>Bienvenido Administrador <?php echo $_SESSION['correo']; ?></h1>
-      
+        
+  		<h1>Bienvenido Administrador <br>
+            <?php echo $_SESSION['correo']; ?></h1>
 		<h1>Lista de usuarios</h1>
     
-     <div>
+
+     <div class="buttoms">
            <a class="btn btn-success" href="#">Nuevo usuario <i class="fa fa-plus"></i> </a>
-           <a class="btn btn-warning" href="#">Log Out <i class="fa fa-power-off" aria-hidden="true"></i></a>
+           <a class="btn btn-warning" href="../Fashions.php">Salir <i class="fa fa-power-off" aria-hidden="true"></i></a>
     </div>
 <br>
     
-      <table class=" " id= "table_id">
+      <table class="table_id " id= "table_id">
          <thead>    
               <tr>
                    <th>Nombre</th>

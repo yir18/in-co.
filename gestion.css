@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;1,100&display=swap');
+
+body {
+    background: url(./Recursos/1.jpg);
+    font-family: 'raleway';
+    height: 100vh; /* Establecemos la altura del body al 100% del viewport */
+    margin: 0; /* Eliminamos márgenes para evitar desplazamiento */
+}
+
+h1 {
+    text-align: center;
+    color: rgb(254, 254, 254);
+    margin: 50px;
+}
+
+.buttoms {
+    text-align: center;
+}
+
+.table_id {
+    text-align: center;
+    margin: 50px auto; /* Centra la tabla horizontalmente con un margen superior de 50px */
+    border-collapse: collapse; /* Fusiona los bordes de las celdas */
+    width: 80%; /* Establece el ancho de la tabla al 80% del contenedor */
+   
+}
+
+.th {
+    background-color: #f2f2f2; /* Color de fondo para las celdas de encabezado */
+}
+
+.th,
+.td {
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: center; /* Alinea el texto horizontalmente en las celdas */
+    border-bottom: 1px solid #ddd; /* Borde inferior para todas las celdas */
+}
+
+.td:first-child,
+.th:first-child {
+    border-left: 1px solid #ddd; /* Borde izquierdo para la primera columna */
+}
+
+.td:last-child,
+.th:last-child {
+    border-right: 1px solid #ddd; /* Borde derecho para la última columna */
+}
+
+
+
+
+
+
+
+
+/******************** editar *********************/
+
+.container {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura para centrar verticalmente */
+  }
+  
+  .form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Coloca los elementos uno encima del otro */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+  
+  .form-group {
+    width: 100%; /* Ajusta el ancho al 100% */
+    max-width: 400px; /* Establece el ancho máximo */
+    margin-bottom: 20px; /* Espaciado entre los grupos de formulario */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  } 
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+
+
+  .btn-warning {
+    background-color: #faf02bed;
+    color: #fff;
+  }
+  
+  .btn-warning:hover {
+    background-color: #adad30;
+  }
+
