@@ -15,6 +15,10 @@ productContainers.forEach((item, i) => {
     })
 })
 
+
+
+
+
 const fondo = document.querySelector(".fondo");
 const loginlink = document.querySelector(".login-link");
 const registrarlink = document.querySelector(".registrar-link");

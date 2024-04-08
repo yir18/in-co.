@@ -21,6 +21,7 @@ $usuario = mysqli_fetch_assoc($resultado);
 </head>
 <body>
 <form  action="../includes/_functions.php" method="POST">
+  
 <div class="container">
     <form action="../includes/_functions.php" method="POST" id="login" class="form">
       <h3 class="text-center">Editar usuario</h3>

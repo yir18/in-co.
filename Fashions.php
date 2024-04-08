@@ -55,12 +55,8 @@
         </nav>
     </header>
     
-<!--Cuadro del login-->
 
-
-
-
-    <!--banner-->
+    <!------------------------banner------------------------------>
  <section class="section-banner">   
     <div class="banner">
         <img src="Imagenes/banner.jpg" alt="Banner">
@@ -71,12 +67,14 @@
         </div>
     </div>
 </section>
+
     <!-----------------------Slider de productos------------------------->
     <section class="product">
         <h2 class="product-category">Novedades destacadas</h2>
         <button class="pre-btn"><img src="Imagenes/arrow.png" class="arrow" alt=""></button>
         <button class="nxt-btn"><img src="Imagenes/arrow.png" class="arrow"  alt=""></button>
         <div class="product-container">
+
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
@@ -88,54 +86,55 @@
                     <span class="price">$20.000</span><span class="actual-price">$40.000</span>
                 </div>
             </div>
+
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="Imagenes/card2.png" class="product-thumb" alt="">
                     <button class="card-btn">Agregar a la Cesta</button>
                 </div>
-
                 <div class="product-info">
                     <h2 class="product-brand">Chaqueta</h2>
                     <span class="price">$40.000</span><span class="actual-price">$80.000</span>
                 </div>
             </div>
+
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="Imagenes/card3.png" class="product-thumb" alt="">
                     <button class="card-btn">Agregar a la Cesta</button>
-
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">Camiseta algodón</h2>
                     <span class="price">$30.000</span><span class="actual-price">$60.000</span>
                 </div>
             </div>
+
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="Imagenes/card4.png" class="product-thumb" alt="">
                     <button class="card-btn">Agregar a la Cesta</button>
                 </div>
-
                 <div class="product-info">
                     <h2 class="product-brand">Chaqueta tweed</h2>
                     <span class="price">$20</span><span class="actual-price">$40</span>
                 </div>
             </div>
+
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="Imagenes/card5.png" class="product-thumb" alt="">
                     <button class="card-btn">Agregar a la Cesta</button>
                 </div>
-
                 <div class="product-info">
                     <h2 class="product-brand">Chaqueta de traje</h2>
                     <span class="price">$20</span><span class="actual-price">$40</span>
                 </div>
             </div>
+
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
@@ -147,6 +146,7 @@
                     <span class="price">$20</span><span class="actual-price">$40</span>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -171,7 +171,7 @@
         <div class="box">
             <H2>SIGUENOS</H2>
             <div class="red-social">
-                <a href="#" class="fa fa-facebook"></a>
+                <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-youtube"></a>

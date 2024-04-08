@@ -25,7 +25,7 @@ session_start();
     
 
      <div class="buttoms">
-           <a class="btn btn-success" href="#">Nuevo usuario <i class="fa fa-plus"></i> </a>
+           <a class="btn btn-success" href="registrar_user.php">Nuevo usuario <i class="fa fa-plus"></i> </a>
            <a class="btn btn-warning" href="../Fashions.php">Salir <i class="fa fa-power-off" aria-hidden="true"></i></a>
     </div>
 <br>
