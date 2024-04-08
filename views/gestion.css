@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;1,100&display=swap');
 
 body {
-    background: url(./Recursos/1.jpg);
+    background: url(../Recursos/1.jpg);
     font-family: 'raleway';
     height: 100vh; /* Establecemos la altura del body al 100% del viewport */
     margin: 0; /* Eliminamos márgenes para evitar desplazamiento */

@@ -16,12 +16,12 @@ $usuario = mysqli_fetch_assoc($resultado);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../gestion.css">
+    <link rel="stylesheet" type="text/css" href="gestion.css">
     <title>Editar Usuario</title>
 </head>
 <body>
 <form  action="../includes/_functions.php" method="POST">
-  
+
 <div class="container">
     <form action="../includes/_functions.php" method="POST" id="login" class="form">
       <h3 class="text-center">Editar usuario</h3>
@@ -48,10 +48,11 @@ $usuario = mysqli_fetch_assoc($resultado);
         </select>
         <input type="hidden" name="accion" value="editar_registro">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
+        <button type="submit" class="btn btn-success">Editar</button>
+        <a href="admin_user.php" class="btn btn-danger">Cancelar</a>
      </div>
                                                 
-      <button type="submit" class="btn btn-success">Editar</button>
-      <a href="admin_user.php" class="btn btn-danger">Cancelar</a>
+      
     </form>
   </div>                              
 </form>                  

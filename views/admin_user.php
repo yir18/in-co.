@@ -13,7 +13,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestio de usuarios</title>
-    <link rel="stylesheet" type="text/css" href="../gestion.css">
+    <link rel="stylesheet" type="text/css" href="gestion.css">
     <script src="https://kit.fontawesome.com/32bfe0633a.js" crossorigin="anonymous"></script>
 </head>
 <body class="body">

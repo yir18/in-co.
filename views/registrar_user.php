@@ -9,18 +9,18 @@ session_start()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../gestion.css">
+    <link rel="stylesheet" type="text/css" href="gestion.css">
     <script src="https://kit.fontawesome.com/32bfe0633a.js" crossorigin="anonymous"></script>
     <title>Registro</title>
 </head>
+
 <body>
-<h1>Bienvenido Administrador <br>
-            <?php echo $_SESSION['correo']; ?></h1>
+    <h1>Bienvenido Administrador <br>
+    <?php echo $_SESSION['correo']; ?></h1>
 
-            <div class="container">
-            <h2>Registrar usuario</h2>
+        <div class="container">
+        <h2>Registrar usuario</h2>
             <form action="../includes/_functions.php" method="post">
-
                 <div class="form-group">
                     <label for="#">Nombre completo</label>
                     <input class="form-control" type="text" required name="nombre" id="nombre">
@@ -45,8 +45,8 @@ session_start()
                    <button type=" submit" name="registrar_usuario" class="btn btn-success"> Registrar usuario</button>
                    <a href="admin_user.php" class="btn btn-danger">Cancelar</a>
                 </div>
-
-</div>
+            </form>    
+        </div>
               
 
 </body>
